@@ -1,0 +1,63 @@
+<aside
+    class="control-sidebar control-sidebar-dark"
+    style="padding: 16px; padding-top: 73px"
+>
+    <h5>Customize AdminLTE</h5>
+    <hr class="mb-2" />
+    <div style="padding: 8px 0">
+        <app-checkbox @change="handleDarkModeChange"> Dark mode </app-checkbox>
+        <pf-select
+            v-model="navbarVariant"
+            label="Light Navbar Variants"
+            class="mt-3"
+            :options="navbarLightVariants"
+            type="custom"
+            @change="onNavbarVariantChange"
+        >
+        </pf-select>
+        <pf-select
+            v-model="navbarVariant"
+            label="Dark Navbar Variants"
+            class="mt-3"
+            :options="navbarDarkVariants"
+            type="custom"
+            @change="onNavbarVariantChange"
+        >
+        </pf-select>
+        <pf-select
+            label="Accent Color Variants"
+            class="mt-3"
+            :options="[]"
+            type="custom"
+            disabled
+        >
+        </pf-select>
+        <pf-select
+            label="Light Sidebar Variants"
+            class="mt-3"
+            v-model="sidebarSkin"
+            :options="lightSidebarSkins"
+            type="custom"
+            @change="onSidebarSkinChange"
+        >
+        </pf-select>
+        <pf-select
+            label="Dark Sidebar Variants"
+            class="mt-3"
+            v-model="sidebarSkin"
+            :options="darkSidebarSkins"
+            type="custom"
+            @change="onSidebarSkinChange"
+        >
+        </pf-select>
+
+        <pf-select
+            label="Brand Logo Variants"
+            class="mt-3"
+            :options="[]"
+            type="custom"
+            disabled
+        >
+        </pf-select>
+    </div>
+</aside>
