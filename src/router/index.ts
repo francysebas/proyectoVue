@@ -39,7 +39,7 @@ const routes: Array<RouteRecordRaw> = [
                 }
             },
             {
-                path: 'sub-menu-1',
+                path: '/sub-menu-1/',
                 name: 'Sub Menu 1',
                 component: SubMenu,
                 meta: {
