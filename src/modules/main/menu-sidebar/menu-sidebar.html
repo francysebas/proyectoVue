@@ -1,8 +1,10 @@
 <aside class="main-sidebar elevation-4" :class="sidebarSkin">
+
+    <!-- logo de menù -->
     <router-link to="/" class="brand-link">
         <img
             src="@/assets/img/logoAic.png"
-            alt="AdminLTE Logo"
+            alt="AIC-EPSI Logo"
             class="brand-image img-circle elevation-3"
             style="opacity: 0.8"
         />
@@ -10,6 +12,7 @@
     </router-link>
 
     <div class="sidebar">
+        <!-- imagen del perfil -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
                 <img
@@ -32,7 +35,7 @@
                 role="menu"
                 data-accordion="false"
             >
-                <!-- <li class="nav-item">
+                <li class="nav-item">
                     <router-link
                         to="/"
                         class="nav-link"
@@ -52,7 +55,8 @@
                         <i class="nav-icon fas fa-user"></i>
                         <p>{{ $t("labels.profile") }}</p>
                     </router-link>
-                </li> -->
+                </li>
+                <!-- submenu lateral -->
                 <app-menu-item
                     v-for="item in menu"
                     :menuItem="item"
